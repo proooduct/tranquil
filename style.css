@@ -13,6 +13,7 @@ html {
 /* --- Typography: Start --- */
 body {
   color: #0a0a0a;
+  background-color: #eaeaea;
 }
 
 h1 {
@@ -34,16 +35,14 @@ form {
 header {
   max-width: 80vw;
   margin: 0 auto;
-  background: rgba(255, 0, 0, 0.442);
   padding: 1rem;
+  background: rgba(255, 0, 0, 0.442);
 }
 
-header > nav > ul {
-  list-style: none;
-}
-
+/* Positioning Using Float: Start */
 header > .logo {
   float: left;
+  font-weight: bold;
 }
 
 header > nav {
@@ -58,13 +57,51 @@ header > nav > ul > li {
   float: left;
   padding-right: 1rem;
 }
+/* Positioning Using Float: Start */
+
+header > nav > ul {
+  list-style: none;
+}
 
 header > nav > ul > li > a {
   text-decoration: none;
+  color: #0a0a0a;
 }
 /* --- Header: End --- */
 
 /* --- Main: Start --- */
+main {
+  margin: 0 auto;
+  text-align: center;
+}
+
+main > .hero {
+  color: #eaeaea;
+  height: 80vh;
+  background-image: url("https://source.unsplash.com/1024x1024");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+main > .hero > h1 {
+  padding-top: 20vh;
+  text-shadow: 0.1rem 0.1rem 0.3rem #0a0a0a; /* x/y/blur/color */
+}
+
+main > .hero > p {
+  margin: 1.5rem 0 5rem 0; /* t/r/b/l */
+}
+
+main > .hero > button {
+  padding: 1rem 2rem;
+  background-color: chartreuse;
+  border-radius: 1rem;
+  border: none;
+  cursor: pointer; /* cursor: hand */
+}
+
 /* --- Main: End --- */
 
 /* --- Form: Start --- */
