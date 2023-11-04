@@ -14,4 +14,64 @@ html {
 body {
   color: #0a0a0a;
 }
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3.8rem;
+}
+
+p,
+li,
+form {
+  font-size: 2rem;
+}
 /* --- Typography: End --- */
+
+/* --- Header: Start --- */
+header {
+  max-width: 80vw;
+  margin: 0 auto;
+  background: rgba(255, 0, 0, 0.442);
+  padding: 1rem;
+}
+
+header > nav > ul {
+  list-style: none;
+}
+
+header > .logo {
+  float: left;
+}
+
+header > nav {
+  float: right;
+}
+
+.clear {
+  clear: both;
+}
+
+header > nav > ul > li {
+  float: left;
+  padding-right: 1rem;
+}
+
+header > nav > ul > li > a {
+  text-decoration: none;
+}
+/* --- Header: End --- */
+
+/* --- Main: Start --- */
+/* --- Main: End --- */
+
+/* --- Form: Start --- */
+form input,
+form label,
+form textarea {
+  display: block;
+}
+
+/* --- Form: End --- */
