@@ -7,6 +7,60 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Tranquil</h1>
+    <header>
+      <p class="logo">Tranquil</p>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="hero">
+        <h1>Mental Health Matters</h1>
+        <p>
+          Embrace Mental Wellness, Reclaim Your Life, and Redefine Your Tomorrow
+        </p>
+        <button type="submit">Relax!</button>
+      </section>
+
+      <section class="contact">
+        <form>
+          <label for="fname">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="fname"
+            placeholder="Mr. John Doe"
+            required
+          />
+
+          <label for="femail">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="femail"
+            placeholder="email@product.me"
+            required
+          />
+
+          <label for="fmessage">Message</label>
+          <textarea
+            name="message"
+            id="fmessage"
+            cols="30"
+            placeholder="Enter your message"
+            rows="10"
+          ></textarea>
+
+          <button type="submit">Go!</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>Copyright &copy; @proooduct</p>
+    </footer>
   </body>
 </html>
