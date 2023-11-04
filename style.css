@@ -14,6 +14,13 @@ html {
 body {
   color: #0a0a0a;
   background-color: #eaeaea;
+  font-family: "Jost", sans-serif;
+}
+
+input,
+textarea,
+button {
+  font-family: "Jost", sans-serif;
 }
 
 h1 {
@@ -36,13 +43,18 @@ header {
   max-width: 80vw;
   margin: 0 auto;
   padding: 1rem;
-  background: rgba(255, 0, 0, 0.442);
 }
 
 /* Positioning Using Float: Start */
 header > .logo {
   float: left;
   font-weight: bold;
+  cursor: pointer;
+  /* Gradient */
+  background: -webkit-linear-gradient(red, orange);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 header > nav {
@@ -78,7 +90,8 @@ main {
 main > .hero {
   color: #eaeaea;
   height: 80vh;
-  background-image: url("https://source.unsplash.com/1024x1024");
+  background-image: linear-gradient(rgb(83, 59, 22), transparent),
+    url(background.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -94,7 +107,7 @@ main > .hero > p {
   margin: 1.5rem 0 5rem 0; /* t/r/b/l */
 }
 
-main > .hero > button {
+button {
   padding: 1rem 2rem;
   background-color: chartreuse;
   border-radius: 1rem;
@@ -105,10 +118,31 @@ main > .hero > button {
 /* --- Main: End --- */
 
 /* --- Form: Start --- */
+main > .contact > h2 {
+  margin-top: 2rem;
+}
+
 form input,
 form label,
 form textarea {
   display: block;
+  margin: 0 auto;
+  width: 50vw; /* equal width */
+  margin: 1rem auto 1rem;
 }
 
+main > .contact > form > button {
+  width: 50vw;
+}
 /* --- Form: End --- */
+
+/* --- Footer: Start --- */
+footer {
+  margin-top: 8rem;
+  padding: 1rem;
+  background-color: gray;
+  color: #eaeaea;
+  text-align: center;
+  text-transform: lowercase;
+}
+/* --- Footer: End --- */
